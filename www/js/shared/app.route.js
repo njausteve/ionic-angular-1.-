@@ -35,6 +35,10 @@ angular.module('appmart')
         }
       }
     })
+   .state('login', {
+      url: '/login',
+      templateUrl: 'templates/login.html'
+  })
 
   .state('app.single', {
     url: '/playlists/:playlistId',

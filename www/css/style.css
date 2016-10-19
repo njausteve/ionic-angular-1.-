@@ -1,5 +1,146 @@
 /* Empty. Add your own CSS if you like */
 
+/*  fonts */
+.font-bold{
+    font-weight: bold;
+}
+.font-bold-mid{
+   font-weight: 500;
+}
+.roboto-reg {
+  font-family: RobotoRegular;
+}
+.roboto-med {
+  font-family: RobotoMedium;
+}
+.roboto-light {
+  font-family: RobotoLight;
+}
+.font-34 {
+  font-size: 12px !important;
+}
+.font-36 {
+  font-size: 13px !important;
+}
+.font-39 {
+  font-size: 14px !important;
+}
+.font-42 {
+  font-size: 15px !important;
+}
+.font-48 {
+  font-size: 16px !important;
+}
+.font-54 {
+  font-size: 18px !important;
+}
+.font-56 {
+  font-size: 20px !important;
+}
+.font-5 {
+  font-size: 12px !important;
+}
+.font-5 {
+  font-size: 13px;
+}
+.font-6 {
+  font-size: 14px;
+}
+.font-7 {
+  font-size: 15px;
+}
+.font-8 {
+  font-size: 17px !important;
+}
+.font-blue{
+    color: #0099df;
+}
+.font-dblue{
+    color: #4c50fc;
+}
+.font-gray{
+    color: #839096;
+}
+.font-dgray{
+    color: #4c4c4c;
+}
+.font-lgray{
+    color: #8a8a8a;
+}
+.font-white{
+    color: #fff;
+}
+.font-placeholder{
+    color: #b2b2b2;
+}
+
+.backgrnd-orange{
+    background-color: #F37B01;
+}
+
+
+.font-orange{
+    color:#F37B01 !important;
+
+}
+.font-black{
+    color:#000;
+}
+
+
+*{
+
+    font-family: HelveticaNeue,Helvetica,arial;
+}
+
 .bar .bar-stable  .title {
       color : #007BC3 !important;
 }
+.install-btn{
+    font-size: 14px !important;
+
+}
+
+.col.image_placeholder{
+    margin-right:10px !important;
+    
+}
+
+.gray-light-bgrnd{
+    background-color: #F3F3F3 ;
+}
+
+.gray-dark-bgrnd{
+    background-color: #959595 ;
+}
+.light-blue{
+    color: #218BCA;
+    
+}
+.rounded{
+    border-radius: 6px;
+}
+.background_img{
+    background-image: url(../img/10-Free-Blurred-Backgrounds-JPG.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+     
+}
+.login label.item{
+        margin: 10px!important;
+     
+    border-radius: 10px;
+    padding: 5px;
+    border-bottom: 4px solid #F37B01;
+    
+}
+.form-wrapper{
+    margin-top: 50%; 
+}
+
+/*
+.list-inset.padding{
+    
+    background-image: url(../img/square_bg.png) !important;
+    border-radius: 4px;
+}*/

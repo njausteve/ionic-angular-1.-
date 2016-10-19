@@ -43,12 +43,12 @@ angular.module('appmart.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'App1', id: 1 },
+    { title: 'App2', id: 2 },
+    { title: 'App3', id: 3 },
+    { title: 'App4', id: 4 },
+    { title: 'App5', id: 5 },
+    { title: 'App6', id: 6 }
   ];
 })
 
