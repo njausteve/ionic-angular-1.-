@@ -37,7 +37,9 @@ angular.module('appmart')
     })
    .state('login', {
       url: '/login',
-      templateUrl: 'templates/login.html'
+      templateUrl: 'templates/login/login.html',
+      controller: 'loginController',
+      controllerAs : 'login'
   })
 
   .state('app.single', {
@@ -50,5 +52,8 @@ angular.module('appmart')
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+//  $urlRouterProvider.otherwise('/app/playlists');
+    
+  $urlRouterProvider.otherwise('/login');    
+    
 });
