@@ -1,6 +1,6 @@
 angular.module('appmart.controllers', [])
 //
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $state) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -25,9 +25,12 @@ angular.module('appmart.controllers', [])
 //  };
 //
 //  // Open the login modal
-//  $scope.login = function() {
-//    $scope.modal.show();
-//  };
+  $scope.logout = function() {
+     console.log("clicked logout");
+//      $state.go('logout');
+//      $state.go($state.$current, null, { reload: true });
+      $state.go('login');
+  };
 //
 //  // Perform the login action when the user submits the login form
 //  $scope.doLogin = function() {
@@ -39,17 +42,34 @@ angular.module('appmart.controllers', [])
 //      $scope.closeLogin();
 //    }, 1000);
 //  };
+    
+    
 })
 
+
 .controller('PlaylistsCtrl', function($scope) {
+    
+    console.log("inside playlistsCtrl");
+    
+    
+         
+
   $scope.playlists = [
-    { title: 'App1', id: 1 },
-    { title: 'App2', id: 2 },
-    { title: 'App3', id: 3 },
-    { title: 'App4', id: 4 },
-    { title: 'App5', id: 5 },
-    { title: 'App6', id: 6 }
+    { title: 'App1', id: 1, description:'Lorem ipsum dolor sit amet, no eius nonumy reformidans pro, pertinax abhorreant mediocritatem ut pro, his graece incorrupte cu. No vel utamur qualisque, ea tritani nominavi definitionem usu, eirmod singulis referrentur et eam. Aeque decore dssentias ea vis. Sit id admodum percipit, eos posse feugait voluptatum id..' },
+    { title: 'App2', id: 2, description:'Lorem ipsum dolor sit amet, no eius nonumy reformidans pro, pertinax abhorreant mediocritatem ut pro, his graece incorrupte cu. No vel utamur qualisque, ea tritani nominavi definitionem usu, eirmod singulis referrentur et eam. Aeque decore dissentias ea vis. Sit id admodum percipit, eos posse feugait voluptatum id..'},
+    { title: 'App3', id: 3, description:'Lorem ipsum dolor sit amet, no eius nonumy reformidans pro, pertinax abhorreant mediocritatem ut pro, his graece incorrupte cu. No vel utamur qualisque, ea tritani nominavi definitionem usu, eirmod singulis referrentur et eam. Aeque decore dissentias ea vis. Sit id admodum percipit, eos posse feugait voluptatum id..'},
+    { title: 'App4', id: 4, description:'Lorem ipsum dolor sit amet, no eius nonumy reformidans pro, pertinax abhorreant mediocritatem ut pro, his graece incorrupte cu. No vel utamur qualisque, ea tritani nominavi definitionem usu, eirmod singulis referrentur et eam. Aeque decore dissentias ea vis. Sit id admodum percipit, eos posse feugait voluptatum id..'},
+    { title: 'App5', id: 5, description:'Lorem ipsum dolor sit amet, no eius nonumy reformidans pro, pertinax abhorreant mediocritatem ut pro, his graece incorrupte cu. No vel utamur qualisque, ea tritani nominavi definitionem usu, eirmod singulis referrentur et eam. Aeque decore dissentias ea vis. Sit id admodum percipit, eos posse feugait voluptatum id..' },
+    { title: 'App6', id: 6, description:'Lorem ipsum dolor sit amet, no eius nonumy reformidans pro, pertinax abhorreant mediocritatem ut pro, his graece incorrupte cu. No vel utamur qualisque, ea tritani nominavi definitionem usu, eirmod singulis referrentur et eam. Aeque decore dissentias ea vis. Sit id admodum percipit, eos posse feugait voluptatum id..' }
   ];
+    
+    
+     function install(id){
+           
+         console.log(id);
+     }
+    
+    
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

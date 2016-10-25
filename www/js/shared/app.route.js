@@ -41,8 +41,15 @@ angular.module('appmart')
       controller: 'loginController',
       controllerAs : 'login'
   })
-
-  .state('app.single', {
+      
+ .state('logout', {
+		url: '/logout',
+		controller: function($scope, $route) {
+			$route.reload()
+		}
+	})
+  
+.state('app.single', {
     url: '/playlists/:playlistId',
     views: {
       'menuContent': {
@@ -50,6 +57,7 @@ angular.module('appmart')
         controller: 'PlaylistCtrl'
       }
     }
+ 
   });
   // if none of the above states are matched, use this as the fallback
 //  $urlRouterProvider.otherwise('/app/playlists');
